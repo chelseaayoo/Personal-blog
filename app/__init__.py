@@ -25,17 +25,17 @@ def create_app(config_name):
     app.config.from_object(config_options[config_name])
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    # #Initializing Flask Extenstion
-    # bootstrap.init_app(app)
-    # db.init_app(app)
-    # login_manager.init_app(app)
-    # mail.init_app(app)
+    #Initializing Flask Extenstion
+    bootstrap.init_app(app)
+    db.init_app(app)
+    login_manager.init_app(app)
+    mail.init_app(app)
 
 
-    # #Registering the blueprint
-    # from .main import main as main_blueprint
-    # app.register_blueprint(main_blueprint)
-    # app.secret_key = 'password'
+    #Registering the blueprint
+    from .main import main as main_blueprint
+    app.register_blueprint(main_blueprint)
+    app.secret_key = 'password'
 
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
