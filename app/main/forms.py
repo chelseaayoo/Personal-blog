@@ -9,8 +9,8 @@ class UpdateProfileForm(FlaskForm):
 
 class UploadBlogForm(FlaskForm):
     title = TextAreaField('Blog Title',validators=[Required()])
-    blog =  TextAreaField('your blog',validators=[Required()])
-    submit = SubmitField('Post')
+    blog =  TextAreaField('Your blog',validators=[Required()])
+    submit = SubmitField('Post Blog')
 
 class CommentsForm(FlaskForm):
     comment = TextAreaField('Type comment:',validators=[Required()])
