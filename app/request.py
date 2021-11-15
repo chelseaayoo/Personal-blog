@@ -1,6 +1,7 @@
 import urllib.request,json
 from .models import Quote
 # from app import app
+#from app import app
 
 
 #Getting the quote base url
