@@ -4,7 +4,7 @@
 {% block content %}
 <div class="container">
 <div class="row">
-<!-- displaying  Username-->
+<!-- displays  Username-->
   <div class="col-md-4">
     <h3> {{user.username| capitalize}} </h3>
 
@@ -17,7 +17,7 @@
   </div>
 
   <!--Display profile photo-->
-  <div class="col-md-4">
+  <div class="col-md-8">
 
     {% if user.profile_pic_path %}
     <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail">
