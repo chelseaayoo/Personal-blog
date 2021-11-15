@@ -11,7 +11,7 @@ def load_user(user_id):
 
 class Quote:
     """
-    Quote class to define Quote Objects"""
+    Quote class that defines Quote Objects"""
     def __init__(self,id,author,quote):
         self.id = id
         self.author = author
