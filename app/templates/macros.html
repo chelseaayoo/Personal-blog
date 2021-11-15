@@ -16,7 +16,7 @@
 
 <div class="container">
     <div class="post">
-Title:{{blog.title}}
+<p>Title:{{blog.title}}</p>
 <p> Blog:{{blog.blog}}</p>
 <p> Posted on:{{blog.posted.strftime('%Y-%m-%d')}}</p>
 <a href="{{url_for('main.comment_blog',blog_id=blog.id)}}"><button type="button"
